@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+
+        <!-- Form to collect resume details -->
+        <form id="resume-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="objective">Career Objective:</label>
+                <textarea id="objective" placeholder="Write your career objective"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Describe your experience"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="List your education details"></textarea>
+            </div>
+
+            <!-- File input for profile picture -->
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture:</label> 
+                <input type="file" id="profile-picture" accept="image/*">
+            </div>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <!-- Section to display the generated resume -->
+        <div id="generated-resume" class="generated-resume">
+            <h2>Generated Resume</h2>
+            <div id="resume-content"></div>    
+          <button type="button" id="save-changes">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
